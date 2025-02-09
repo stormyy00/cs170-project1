@@ -1,0 +1,34 @@
+The best state to expand with a g(n) = 0 and h(n) = 0 
+[1, 2, 3]
+[4, 5, 6]
+[0, 7, 8]
+
+The best state to expand with a g(n) = 1 and h(n) = 0 
+[1, 2, 3]
+[0, 5, 6]
+[4, 7, 8]
+
+The best state to expand with a g(n) = 1 and h(n) = 0 
+[1, 2, 3]
+[4, 5, 6]
+[7, 0, 8]
+
+The best state to expand with a g(n) = 2 and h(n) = 0 
+[0, 2, 3]
+[1, 5, 6]
+[4, 7, 8]
+
+The best state to expand with a g(n) = 2 and h(n) = 0 
+[1, 2, 3]
+[4, 0, 6]
+[7, 5, 8]
+
+The best state to expand with a g(n) = 2 and h(n) = 0 
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 0]
+
+Solution depth: 2, 
+Number of nodes expanded: 6, 
+Max queue size: 10, 
+Runtime: 0.000229 seconds 

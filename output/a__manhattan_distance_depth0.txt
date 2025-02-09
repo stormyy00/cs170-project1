@@ -1,0 +1,9 @@
+The best state to expand with a g(n) = 0 and h(n) = 0 
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 0]
+
+Solution depth: 0, 
+Number of nodes expanded: 1, 
+Max queue size: 1, 
+Runtime: 0.000053 seconds 
