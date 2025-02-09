@@ -44,7 +44,7 @@ def general_search(start, goal, get_neighbors, heuristic=None):
         max_queue_size = max(max_queue_size, len(priority_queue))
 
         # get current node from heap
-        _, cost, state, path = heapq.heappop(priority_queue)
+        f_n, cost, state, path = heapq.heappop(priority_queue)
 
         # covert to tuple for easy comparison i.e. fancy edge cases
         state_tuple = tuple(tuple(row) for row in state) 
@@ -59,9 +59,7 @@ def general_search(start, goal, get_neighbors, heuristic=None):
         new_path = path + [state]
 
         # Traceback
-        g_n = cost
-        h_n = heuristic(state, goal)
-        logs.append((state, g_n, h_n))
+        logs.append((state, cost, f_n - cost))
 
         # if goal reached then return data necessary 
         if state == goal:
@@ -185,7 +183,7 @@ for i, puzzle in puzzles.items():
         path, nodes_expanded, max_queue_size, runtime = search_and_write_results(puzzle, GOAL, algorithm_name, heuristic)
         print(f"{algorithm_name} \n"
             f"Solution depth: {len(path) - 1 if path else 'N/A'}, \n"
-            f"Number of nodes expanded: {nodes_expanded}, \n"
+            f"Number of nodes expanded: {nodes_expanded - 1}, \n"
             f"Max queue size: {max_queue_size}, \n"
             f"Runtime: {runtime:.6f} seconds \n"
 )

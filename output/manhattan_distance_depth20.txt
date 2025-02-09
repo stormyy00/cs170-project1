@@ -2514,6 +2514,6 @@ The best state to expand with a g(n) = 20 and h(n) = 0
 [7, 8, 0]
 
 Solution depth: 20, 
-Number of nodes expanded: 503, 
+Number of nodes expanded: 502, 
 Max queue size: 532, 
-Runtime: 0.041211 seconds 
+Runtime: 0.009156 seconds 

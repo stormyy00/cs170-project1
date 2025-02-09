@@ -64,6 +64,6 @@ The best state to expand with a g(n) = 8 and h(n) = 0
 [7, 8, 0]
 
 Solution depth: 8, 
-Number of nodes expanded: 13, 
+Number of nodes expanded: 12, 
 Max queue size: 23, 
-Runtime: 0.000582 seconds 
+Runtime: 0.000321 seconds 
